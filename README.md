@@ -1,17 +1,31 @@
-# CACAO-BPMN Mapping: Use Case
+# Reviewing BPMN as a Modeling Notation for CACAO Security Playbooks
 
-In November 2021 the Cybersecurity Information Security Agency (CISA) has published the Cybersecurity Incident & Vulnerability Response Playbook to operational the procedures for planning and conducting cybersecurity incident and vulnerability response activities in Federal Civilian Executive Branch (FCEB) information system [1].
+**Abstract:** As cyber systems become increasingly complex and cybersecurity threats become more prominent, defenders must prepare, coordinate, automate, document, and share their response methodologies to the extent possible. The CACAO standard was developed to satisfy the above requirements providing a common machine-readable framework and schema to document cybersecurity operations processes, including defensive tradecraft and tactics, techniques, and procedures. Although this approach is compelling, a remaining limitation is that CACAO provides no native modeling notation for graphically representing playbooks, which is crucial for simplifying their creation, modification, and understanding. In contrast, the industry is familiar with BPMN, a standards-based modeling notation for business processes that has also found its place in representing cybersecurity processes. This research examines BPMN and CACAO and explores the feasibility of using the BPMN modeling notation to graphically represent CACAO security playbooks. The results indicate that mapping CACAO and BPMN is attainable at an abstract level; however, conversion from one encoding to another introduces a degree of complexity due to the multiple ways CACAO constructs can be represented in BPMN and the extensions required in BPMN to fully support CACAO.
+
+**Read the full paper:**\
+M. Zych, V. Mavroeidis, K. Fysarakis and M. Athanatos, "Reviewing BPMN as a Modeling Notation for CACAO Security Playbooks," 2023 IEEE International Conference on Cyber Security and Resilience (CSR), Venice, Italy, 2023, pp. 490-495, doi: 10.1109/CSR57506.2023.10224922.  
+Accessible preprint (arXiv): [Reviewing BPMN as a Modeling Notation for CACAO Security Playbooks](https://arxiv.org/pdf/2305.18928.pdf)
+
+## CACAO-BPMN Mapping Table
+
+The mapping between CACAO 2.0 and BPMN 2.0 specifications from [1].
+![CACAO-BPMN Mapping](/CACAO-BPMN_Mapping.jpg)\
+***Figure 1:** Mapping table retrieved from [1].*
+
+## CACAO-BPMN Mapping: Use Case
+
+In November 2021 the Cybersecurity Information Security Agency (CISA) has published the Cybersecurity Incident & Vulnerability Response Playbook to operational the procedures for planning and conducting cybersecurity incident and vulnerability response activities in Federal Civilian Executive Branch (FCEB) information system [2].
 
 ## Vulnerability Response Process
 
-This template playbook describes the vulnerability response process in terms of standard vulnerability management program phases from [1].
+This template playbook describes the vulnerability response process in terms of standard vulnerability management program phases from [2].
 
 ![CISA template playbook!](CISA%20template%20playbook.png "CISA template playbook")\
-***Figure 1:** Vulnerability Response Process. Retrieved from [1] page 22.*
+***Figure 2:** Vulnerability Response Process. Retrieved from [2] page 22.*
 
 ## CACAO Playbook - JSON
 
-CACAO playbook in JSON representing the vulnerability response process from Figure 1.
+CACAO playbook in JSON representing the vulnerability response process from Figure 2.
 
 ```json
 {
@@ -105,20 +119,15 @@ CACAO playbook in JSON representing the vulnerability response process from Figu
 }
 ```
 
-## CACAO-BPMN Mapping Table
+## Translating to BPMN
 
-The mapping between CACAO 2.0 and BPMN 2.0 specifications from [2].
-![CACAO-BPMN Mapping](/CACAO-BPMN_Mapping.jpg)\
-***Figure 2:** Mapping table retrieved from [2].*
-
-## Visualizing in BPMN
-
+Utilizing CACAO-BPMN mapping table to visualize the CACAO playbook as BPMN process.
 ![Vulnerability response BPMN modeling notation](/vulnerability-response-bpmn.png)\
 ***Figure 3:** CACAO playbook translated to BPMN process.*
 
 ## Resources
 
-[1] [Cybersecurity Incident & Vulnerability Response Playbooks](https://www.cisa.gov/sites/default/files/publications/Federal_Government_Cybersecurity_Incident_and_Vulnerability_Response_Playbooks_508C.pdf) (cisa.gov)
-
-[2] M. Zych, V. Mavroeidis, K. Fysarakis and M. Athanatos, "Reviewing BPMN as a Modeling Notation for CACAO Security Playbooks," 2023 IEEE International Conference on Cyber Security and Resilience (CSR), Venice, Italy, 2023, pp. 490-495, doi: 10.1109/CSR57506.2023.10224922.  
+[1] M. Zych, V. Mavroeidis, K. Fysarakis and M. Athanatos, "Reviewing BPMN as a Modeling Notation for CACAO Security Playbooks," 2023 IEEE International Conference on Cyber Security and Resilience (CSR), Venice, Italy, 2023, pp. 490-495, doi: 10.1109/CSR57506.2023.10224922.  
 Accessible preprint (arXiv): [Reviewing BPMN as a Modeling Notation for CACAO Security Playbooks](https://arxiv.org/pdf/2305.18928.pdf)
+
+[2] [Cybersecurity Incident & Vulnerability Response Playbooks](https://www.cisa.gov/sites/default/files/publications/Federal_Government_Cybersecurity_Incident_and_Vulnerability_Response_Playbooks_508C.pdf) (cisa.gov)
