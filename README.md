@@ -18,8 +18,6 @@ In November 2021 the Cybersecurity Information Security Agency (CISA) has publis
 
 ## Vulnerability Response Process
 
-This template playbook describes the vulnerability response process in terms of standard vulnerability management program phases from [2].
-
 ![CISA template playbook!](CISA%20template%20playbook.png "CISA template playbook")\
 ***Figure 2:** Vulnerability Response Process. Retrieved from [2] page 22.*
 
@@ -119,7 +117,7 @@ CACAO playbook in JSON representing the vulnerability response process from Figu
 }
 ```
 
-## Translating to BPMN
+## Visually Representing the CACAO Playbook
 
 Utilizing CACAO-BPMN mapping table to visualize the CACAO playbook as BPMN process.
 ![Vulnerability response BPMN modeling notation](/vulnerability-response-bpmn.png)\
